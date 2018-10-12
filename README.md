@@ -144,6 +144,14 @@ Then edit the newly created scheme to make it use a different env file. From the
 
 This is still a bit experimental and dirty – let us know if you have a better idea on how to make iOS use different configurations opening a pull request or issue!
 
+### Windows
+
+Windows uses the iOS method but with a little less setup.
+Once React-Native-Config is installed and linked, when the ReactNativeConfig project is built it will read the .env[.prod|.dev] file and create the constants.
+
+__To update your .env information the _ReactNativeConfig_ package must be rebuilt__
+
+This can be done by manually rebuilding just this package or by cleaning the project before install/build.
 
 ## Setup
 
